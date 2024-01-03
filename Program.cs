@@ -1,4 +1,4 @@
-﻿namespace odev
+namespace odev
 {
     internal class Program
     {
@@ -13,7 +13,7 @@
             switch (zorluk)
             {
                 case 1:
-                    value = 10;
+                  value = 10;
                     eksilt = 10;
                     break;
                 case 2:
@@ -25,6 +25,8 @@
                     eksilt = 100;
                     break;
                 default:
+                    value = 10;
+                    eksilt = 10;
                     break;
             }
 
@@ -39,7 +41,7 @@
                 {
                     Console.WriteLine("Doğru tahmin aferin!");
                 }
-                if (tahmin < sayı)
+                else if (tahmin != sayı)
                 {
                     can -= eksilt;
                 }
